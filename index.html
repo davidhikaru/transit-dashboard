@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hsinchu Transit Dashboard</title>
+        <!-- Link to the external CSS stylesheet -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Main Application Container -->
+        <div class="app-container">
+            <!-- Header Section -->
+            <header>
+                <h1>Hsinchu Transit</h1>
+                <p class="subtitle">Real-Time Status Dashboard</p>
+            </header>
+
+            <!-- Navigation Controls / Tabs -->
+            <div class="controls">
+                <button class="tab-btn btn-primary" data-target="tra">TRA Train</button>
+                <button class="tab-btn btn-secondary" data-target="thsr">THSR Rail</button>
+                <button class="tab-btn btn-secondary" data-target="bus">City Bus</button>
+                <button class="tab-btn btn-secondary" data-target="bike">YouBike</button>
+            </div>
+
+            <!-- Display Area for Live Transit Data -->
+            <div class="camera-wrapper">
+                <!-- Optional scanning visual effect -->
+                <div class="scan-line hidden" id="scanner"></div>
+                
+                <!-- Main Content Display -->
+                <div id="content-box">
+                    <p class="comment" style="margin-top: 130px;">Loading data...</p>
+                </div>
+            </div>
+
+            <!-- Real-Time Result / Status Card -->
+            <div class="result-card" id="status-card">
+                <div class="score-box">
+                    <span class="score-val" id="status-text">Ready</span>
+                </div>
+                <p class="comment" id="status-desc">Select a mode to view dynamic schedules.</p>
+            </div>
+
+            <!-- Footer Controls -->
+            <div class="controls" style="margin-top: 20px; margin-bottom: 0;">
+                <button id="refresh-btn" class="btn-accent">Refresh Data</button>
+            </div>
+        </div>
+
+        <!-- External JavaScript Application Logic -->
+        <script type="module" src="app.js"></script>
+    </body>
+</html>
