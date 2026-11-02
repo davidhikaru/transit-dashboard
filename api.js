@@ -2,7 +2,7 @@
 
 // TODO: Replace with your actual Supabase project URL and Anon Key
 const SUPABASE_URL = 'https://ahhfakwwmezgonaoruyz.supabase.co';
-const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
+const SUPABASE_ANON_KEY = 'sb_publishable_-aebmah8XmxNdCEUKl1wRA_2WbvqdKF';
 
 /**
  * Sends a request to the Supabase Edge Function proxy.
